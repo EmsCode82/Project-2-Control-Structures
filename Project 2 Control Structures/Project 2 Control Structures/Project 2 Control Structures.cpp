@@ -24,15 +24,15 @@ int main()
     // If-Else conditional statements
     if ( intNumber > 0 ) 
     {
-        std::cout << "The number is positive." << std::endl;
+        std::cout << "The number is positive.\n" << std::endl;
     }
     else if ( intNumber < 0 ) 
     {
-        std::cout << "The number is negative." << std::endl;
+        std::cout << "The number is negative.\n" << std::endl;
     } 
     else
     {
-        std::cout << "The number is zero." << std::endl;
+        std::cout << "The number is zero.\n" << std::endl;
     }
 
     // ---------------------------------------------------------------------------
@@ -104,12 +104,19 @@ int main()
     std::cout << std::endl;
 
     // ---------------------------------------------------------------------------
-     
-    // Part 3: Do-While Loop
-
+    // Part 3: Do-While Loop - Demonstrate a do while loop
     // ---------------------------------------------------------------------------
 
+    // Declare loop variable
+    int intIndexN = 0;
 
+    do
+    {
+        std::cout << "\nEnter a number (0 to stop): ";
+        std::cin >> intIndexN;
+        std::cout << "You entered: " << intIndexN << std::endl;
+    } 
+    while (intIndexN != 0);
 
     return 0;    
 }
